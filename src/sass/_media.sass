@@ -1,0 +1,86 @@
+@media (max-width: 1200px)
+    .menu
+        &_item 
+            padding-right: 24px   
+
+@media (max-width: 992px)
+    .menu
+        &_link
+            font-size: 11px
+        &_item 
+            padding-right: 14px 
+@media (max-width: 900px)  
+    .menu   
+        position: fixed
+        flex-direction: column
+        justify-content: start
+        align-items: start
+        background-color: rgba(0, 0, 0, 0.8)
+        top: 49.9px
+        right: -300px
+        height: 100vh
+        padding: 20px 15px
+        transition: 0.6s all
+        &_active
+            right: 0
+        &_item
+            width: 100%
+            border: none
+            padding-right: 0
+            margin: 10px 
+        &_link
+            display: block
+            font-size: 20px
+           
+
+    .hamburger
+        display: block
+        position: absolute
+        right: 15px
+        top: 50%
+        width: 26px
+        transform: translateY(-50%)
+        height: 12px
+        cursor: pointer
+        
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .sub_btn
+        margin: 25px 0 10px 0
+        
+    .promo
+        padding-top: 240px  
+    .f_box
+        margin-top: -10px
+
+    .f_box_site
+        display: flex
+        margin-top: -15px
+
+    .sub_phone
+       font-size: 17px 
+
+    .sub_btn
+        width: 152px
+        height: 40px
+        font-size: 12px
+    .f_box_app
+        display: flex
+        flex-direction: column
+        margin-top: -35px
+    .f_box_app_img
+        margin-bottom: 5px
